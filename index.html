@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="bg-purple-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <img class="h-8 w-auto" src="LogoFTI-UNAI.png" alt="Your Company">
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+
+                            <a href="index.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                                aria-current="page">Main Page</a>
+                            <a href="biodata.html"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Biodata</a>
+                            <a href="contact_us.html"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact
+                                Page</a>
+                            <a href="sitiweb.html"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">SitiWeb</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <button type="button"
+                        class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                        <span class="absolute -inset-1.5"></span>
+                        <span class="sr-only">View notifications</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                    </button>
+
+
+                    <div class="relative ml-3">
+                        <div>
+                            <button type="button"
+                                class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                <span class="absolute -inset-1.5"></span>
+                                <span class="sr-only">Open user menu</span>
+                                <img class="h-8 w-8 rounded-full" src="Biodata.jpg" alt="">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+
+                <a href="index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                    aria-current="page">Main Page</a>
+                <a href="biodata.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Biodata</a>
+                <a href="contact_us.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact
+                    Page</a>
+                <a href="sitiweb.html"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Sitiweb</a>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="bg-gray-100">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <a href="#" class="flex-shrink-0">
+                <img src="logokai_main.png" alt="Logo" class="h-16">
+            </a>
+            <button class="lg:hidden block navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="hidden lg:flex flex-grow items-center" id="navbarNav">
+                <ul class="flex justify-end space-x-4">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Preorder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Akun</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br>
+    <div class="bg-cover bg-center h-screen" style="background-image: url('booking3.png');">
+        <!-- Konten Anda di sini -->
+
+
+        <div class="bg-cover bg-center h-screen" style="background-image: url('booking3.png');">
+            <div class="wrapper">
+                <div class="slides-iklan"><br>
+                    <span id="slide-1"></span>
+                    <span id="slide-2"></span>
+
+
+                    <div class="papan-iklan">
+                        <img src="SUITE CLASS.jpg" alt="">
+                        <img src="UMROH.jpg" alt="">
+
+                    </div>
+
+                    <div id="navigasi-iklan">
+                        <a href="#slide-1">1</a>
+                        <a href="#slide-2">2</a>
+
+                        <div class="grid grid-cols-6 gap-4">
+                            <!-- Gambar 1 -->
+                            <img src="(1).jpg" alt="Gambar 1" class="w-full h-auto">
+
+                            <!-- Gambar 2 -->
+                            <img src="(2).jpg" alt="Gambar 2" class="w-full h-auto">
+
+                            <!-- Gambar 3 -->
+                            <img src="(3).jpg" alt="Gambar 3" class="w-full h-auto">
+
+                            <!-- Gambar 4 -->
+                            <img src="(4).jpg" alt="Gambar 4" class="w-full h-auto">
+
+                            <!-- Gambar 5 -->
+                            <img src="(5).jpg" alt="Gambar 5" class="w-full h-auto">
+
+                            <!-- Gambar 6 -->
+                            <img src="(6).jpg" alt="Gambar 6" class="w-full h-auto">
+                        </div>
+                    </div><br><br><br><br><br><br><br><br><br>
+
+
+
+                    <div class="max-w-md mx-auto bg-white p-8 rounded shadow-md">
+                        <h2 class="text-2xl font-semibold mb-4 text-center"> Pemesanan Tiket</h2>
+
+                        <form id="bookingForm" onsubmit="return validateForm()">
+                            <div class="mb-4">
+                                <label for="stasiunAsal" class="block text-sm font-medium text-gray-600">Stasiun
+                                    Asal</label>
+                                <select id="stasiunAsal" name="stasiunAsal" class="mt-1 p-2 w-full border rounded-md">
+                                    <option value="" disabled selected>Pilih Stasiun Asal</option>
+                                    <option value="manggarai">Manggarai</option>
+                                    <option value="depok">Depok</option>
+                                    <option value="jatinegara">jatinegara</option>
+                                    <option value="tanahabang">Tanah Abang</option>
+                                    <option value="duri">Duri</option>
+
+                                    <option value="bandung" class="fw-bold">Bandung</option>
+                                    <option value="cimahi">Manggarai</option>
+                                    <option value="cimindi">Cimindi</option>
+                                    <option value="padalarang">Padalarang</option>
+                                    <option value="rancaekek">Rancaekek</option>
+                                    <option value="ciroyom">Ciroyom</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="stasiunTujuan" class="block text-sm font-medium text-gray-600">Stasiun
+                                    Tujuan</label>
+                                <select id="stasiunTujuan" name="stasiunTujuan"
+                                    class="mt-1 p-2 w-full border rounded-md">
+                                    <option value="" disabled selected>Pilih Stasiun Tujuan</option>
+                                    <option value="manggarai">Manggarai</option>
+                                    <option value="depok">Depok</option>
+                                    <option value="jatinegara">jatinegara</option>
+                                    <option value="tanahabang">Tanah Abang</option>
+                                    <option value="duri">Duri</option>
+
+                                    <option value="bandung" class="fw-bold">Bandung</option>
+                                    <option value="cimahi">Manggarai</option>
+                                    <option value="cimindi">Cimindi</option>
+                                    <option value="padalarang">Padalarang</option>
+                                    <option value="rancaekek">Rancaekek</option>
+                                    <option value="ciroyom">Ciroyom</option>
+                                </select>
+                            </div>
+
+
+                            <div class="mb-4">
+                                <label for="tanggalBerangkat" class="block text-sm font-medium text-gray-600">Tanggal
+                                    Berangkat</label>
+                                <input type="date" id="tanggalBerangkat" name="tanggalBerangkat"
+                                    class="mt-1 p-2 w-full border rounded-md">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="dewasa" class="block text-sm font-medium text-gray-600">Dewasa</label>
+                                <input type="number" id="dewasa" name="dewasa"
+                                    class="mt-1 p-2 w-full border rounded-md">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="infant" class="block text-sm font-medium text-gray-600">Infant</label>
+                                <input type="number" id="infant" name="infant"
+                                    class="mt-1 p-2 w-full border rounded-md">
+                            </div>
+
+                            <button type="submit"
+                                class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Pesan
+                                Tiket</button>
+                        </form>
+
+                    </div>
+
+                    <script>
+                        function validateForm() {
+                            var stasiunAsal = document.getElementById('stasiunAsal').value;
+                            var stasiunTujuan = document.getElementById('stasiunTujuan').value;
+                            var tanggalBerangkat = document.getElementById('tanggalBerangkat').value;
+                            var dewasa = document.getElementById('dewasa').value;
+                            var infant = document.getElementById('infant').value;
+
+                            if (!stasiunAsal || !stasiunTujuan || !tanggalBerangkat || !dewasa || !infant) {
+                                alert('Harap isi semua kolom form');
+                                return false;
+                            }
+
+                            return true;
+                        }
+                    </script><br><br>
+
+                </div>
+                <h3 class="text-2xl italic text-blue-500 font-bold text-center">Adaptif, Solutif, Kolaboratif Untuk
+                    Indonesia</h3>
+
+                <div class="flex justify-center">
+
+                    <!-- Card 1 -->
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                        <img class="w-full" src="BANGKU.jpg" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Angkutan Penumpang</div>
+                            <button class="bg-blue-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+                                Selengkapnya
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                        <img class="w-full" src="KERETA.jpg" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Angkutan Barang</div>
+                            <button class="bg-blue-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+                                Selengkapnya
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                        <img class="w-full" src="PERUSAHAAN.jpg" alt="Card Image">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Pengusahaan Aset</div>
+                            <button class="bg-blue-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded">
+                                Selengkapnya
+                            </button>
+                        </div>
+                    </div>
+
+                </div><br><br>
+
+
+                <div class="grid grid-cols-6 gap-4">
+                    <!-- Gambar 1 -->
+                    <img src="LOGOKAISERVICES-01.png" alt="Gambar 1" class="w-full h-auto">
+
+                    <!-- Gambar 2 -->
+                    <img src="LOGOKAIBANDARA-01.png" alt="Gambar 2" class="w-full h-auto">
+
+                    <!-- Gambar 3 -->
+                    <img src="LOGOKAICOMMUTER-01.png" alt="Gambar 3" class="w-full h-auto">
+
+                    <!-- Gambar 4 -->
+                    <img src="LOGOKAIWISATA-01.png" alt="Gambar 4" class="w-full h-auto">
+
+                    <!-- Gambar 5 -->
+                    <img src="LOGOKAILOGISTIK-01.png" alt="Gambar 5" class="w-full h-auto">
+
+                    <!-- Gambar 6 -->
+                    <img src="LOGOKAIPROPERTI-01.png" alt="Gambar 6" class="w-full h-auto">
+                </div>
+
+                <footer class="text-center bg-purple-800 text-white">
+                    <div class="footer-content">
+                        <p>&copy; Created by Siti Nuraini Tambunan.</p>
+                        <p>Alamat: Bandung, Indonesia</p>
+                        <p>Email: 2282004@unai.edu</p>
+                    </div>
+                </footer>
+
+</body>
+</head>
+
+</html>

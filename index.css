@@ -1,0 +1,66 @@
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.papan-iklan {
+    display: flex;
+    width: 100%;
+    
+}
+
+.papan-iklan img {
+    width:100% ;
+    animation: slide 20s infinite;
+}
+
+.wrapper {
+    width: 1350px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+#slide-1:target ~ .papan-iklan {
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .papan-iklan {
+    margin-left: -100%; 
+}
+#navigasi-iklan a{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(231, 95, 36, 0.933);
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+#navigasi-iklan a:hover {
+    background-color:orangered;
+}
+
+#navigasi-iklan {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -80px;
+}
